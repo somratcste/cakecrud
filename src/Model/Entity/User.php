@@ -18,7 +18,7 @@ use Cake\ORM\Entity;
 class User extends Entity
 {
 
-    public function _setPassword($value){
+    protected function _setPassword($value){
         $hasher = new DefaultPasswordHasher();
         return $hasher->hash($value);
     }
