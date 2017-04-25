@@ -25,12 +25,6 @@ use Cake\Validation\Validator;
 class BookmarksTable extends Table
 {
 
-    /**
-     * Initialize method
-     *
-     * @param array $config The configuration for the Table.
-     * @return void
-     */
     public function initialize(array $config)
     {
         parent::initialize($config);
@@ -52,12 +46,6 @@ class BookmarksTable extends Table
         ]);
     }
 
-    /**
-     * Default validation rules.
-     *
-     * @param \Cake\Validation\Validator $validator Validator instance.
-     * @return \Cake\Validation\Validator
-     */
     public function validationDefault(Validator $validator)
     {
         $validator
@@ -76,17 +64,26 @@ class BookmarksTable extends Table
         return $validator;
     }
 
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['user_id'], 'Users'));
 
         return $rules;
+    }
+
+    public function findTagged(Query $query, array $options)
+    {
+        $bookmarks = $this->find()
+                ->select(['id','url','title','description']);
+        if(empty($options['tags'])){
+            $bookmarks->leftJoinWith('Tags', function ($q) {
+               return $q->where(['Tags.title IS' => null]);
+            });
+        } else {
+            $bookmarks->leftJoinWith('Tags', function ($q){
+                return $q->where(['Tags.title IN' => $options['tags']]);
+            });
+        }
+        return $bookmarks->group(['Bookmarks.id']);
     }
 }
