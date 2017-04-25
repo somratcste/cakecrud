@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78bff63-a32c-4fda-b308-ab9726509b98" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/Bookmarks/tags.ctp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Template/Users/login.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.php" afterPath="$PROJECT_DIR$/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/BookmarksController.php" afterPath="$PROJECT_DIR$/src/Controller/BookmarksController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Table/BookmarksTable.php" afterPath="$PROJECT_DIR$/src/Model/Table/BookmarksTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AppController.php" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" afterPath="$PROJECT_DIR$/src/Controller/UsersController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,11 +42,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tags.ctp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tags.ctp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Bookmarks/tags.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="58" column="81" lean-forward="false" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Users/login.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -78,6 +107,9 @@
         <option value="$PROJECT_DIR$/config/routes.php" />
         <option value="$PROJECT_DIR$/src/Model/Table/BookmarksTable.php" />
         <option value="$PROJECT_DIR$/src/Template/Bookmarks/tags.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Users/login.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/UsersController.php" />
       </list>
     </option>
   </component>
@@ -153,6 +185,10 @@
               <option name="myItemId" value="Template" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Users" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -169,10 +205,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bookmarks" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,12 +326,12 @@
       <workItem from="1492876989919" duration="1026000" />
       <workItem from="1493048874325" duration="599000" />
       <workItem from="1493130058818" duration="2650000" />
-      <workItem from="1493138515281" duration="6911000" />
+      <workItem from="1493138515281" duration="7504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13353000" />
+    <option name="totallyTimeSpent" value="13946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -490,14 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1141">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Users/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -626,6 +650,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="58" column="81" lean-forward="false" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Users/login.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
           <folding />
         </state>
       </provider>
